@@ -18,16 +18,11 @@
     text-align: center;
 }
 
-
-
-header, main {
-    max-width: 1354px;
-    margin: 0 auto;
-}
-
 /* navbar */
 
 .nav {
+    max-width: 1354px;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -76,6 +71,16 @@ header, main {
     padding: 10px 30px;
     border-radius: 12px;
     margin-left: 345px;
+}
+
+/* font awesome icon */
+
+.nav .fa-bars {
+    display: none;
+}
+
+hr{
+    border: 0px solid #FEA301;
 }
 
 
@@ -133,7 +138,13 @@ header, main {
 
 .box-section {
     background-image: url(../assets/bg.png);  
+    background-size: cover;
     margin-top: 60px;
+}
+
+.box-div {
+    max-width: 1354px;
+    margin: 0 auto;
 }
 
 .title {
@@ -142,6 +153,8 @@ header, main {
 }
 
 .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     margin-top: 80px;
     gap: 30px;
@@ -200,7 +213,7 @@ header, main {
 .btn-box-one {
     color: #64C8FF;
     align-items: center;
-    font-size: 15.09px;
+    font-size: 0.95rem;
     font-weight: 700;
     border: none;
     background-color: white;
@@ -209,7 +222,7 @@ header, main {
 .btn-box-two {
     color: #F0AA00;
     align-items: center;
-    font-size: 15.09px;
+    font-size: 0.95rem;
     font-weight: 700;
     border: none;
     background-color: white;
@@ -218,7 +231,7 @@ header, main {
 .btn-box-three {
     color: #8700FF;
     align-items: center;
-    font-size: 15.09px;
+    font-size: 0.95rem;
     font-weight: 700;
     border: none;
     background-color: white;
@@ -228,10 +241,10 @@ header, main {
 
 .button {
     display: flex;
-    gap: 20px; /* দুই বাটনের মধ্যে ফাঁকা */
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    gap: 10px;
 }
 
 .circle-button {
@@ -254,7 +267,163 @@ header, main {
     color: white;
 }
 
+/* Our Stories */
+.stories-section {
+    background-image: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-size: cover;
+}
 
+.stories {
+    max-width: 1354px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.story-img-one {
+width: 400px;
+height: 250px;
+border-top-right-radius: 16px;
+border-top-left-radius: 16px;
+
+}
+
+.story-one {
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: #FFFFFF;
+    width: 370px;
+    height: 500px;
+    padding: 10px 20px;
+}
+
+.little-story {
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: #FFFFFF;
+    width: 240.27px;
+    height: 230.52px;
+    padding: 10px 20px;
+}
+
+.little-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.btn-view {
+    margin-bottom: 70px;
+}
+
+
+
+
+
+/* footer */
+.bg {
+    background-color: #01ACFD;
+}
+
+
+.ft-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* responsive */
 @media screen and (max-width: 576px) {
+    .logo-title {
+    display: none;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .btn {
+    display: none;
+    }
+
+    .link-ul {
+        display: none;
+    }
+
     
+
+    .nav .fa-bars {
+        display: block;
+        font-size: 24px;
+        color: black;
+        position: absolute;
+        top: 30px;
+        right: 30px;      
+    }
+
+    hr {
+        border: 1px solid #FEA301;
+        width: 360px;
+        margin-top: 20px;
+        overflow-x: hidden;
+    }
+
+    .banner {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    
+    .banner-description {
+        font-size: 0.95rem;
+    }
+    
+    .banner-image {
+        width: 100%;
+        margin-top: 50px;  
+    }
+
+    /* Standard Curriculum */
+    
+    
+    .title {
+        font-size: 2.7rem;
+    }
+    
+    .box-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .box-one {
+        width: 340px;
+        height: 330px;
+        margin-top: 10px;
+    }
+
+    .box-two {
+        width: 340px;
+        height: 330px; 
+        margin: 10px;
+    }
+    .box-three {
+        width: 340px;
+        height: 330px;
+        margin-top: 10px;
+    }
+    
+    .button {
+        display: none;
+    }
+
 }
