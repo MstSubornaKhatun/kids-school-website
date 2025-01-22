@@ -313,6 +313,34 @@ hr{
 }
 
 /* little box stories */
+.story-btn {
+    color: #FFFFFF;
+    font-size: 0.93rem;
+    font-weight: 500;
+    background-color: #3CD8E8;
+    border-radius: 40%;
+    border: none;
+
+    position: relative;
+    width: 174.51px;
+    height: 47.93px;
+    left: 38.35px;
+    top: 314.14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .little-story {
