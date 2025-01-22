@@ -269,46 +269,94 @@ hr{
 
 /* Our Stories */
 .stories-section {
-    background-image: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-image: url(../assets/bg.png), linear-gradient(0deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     background-size: cover;
+}
+
+
+.stories-box {
+    margin-top: 90px;
 }
 
 .stories {
     max-width: 1354px;
     margin: 0 auto;
     margin-bottom: 100px;
+    justify-content: space-between
+}  
+
+.story-one {
+    width: 490px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFFFFF;
 }
 
 .story-img-one {
-width: 400px;
-height: 250px;
-border-top-right-radius: 16px;
-border-top-left-radius: 16px;
-
+    width: 100%;
+    height: auto; 
+    display: block; 
 }
 
-.story-one {
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    background-color: #FFFFFF;
-    width: 370px;
-    height: 500px;
-    padding: 10px 20px;
+.story-content {
+    padding: 50px;
 }
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* little box stories */
+
 
 .little-story {
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
+    width: 350px;
+    height: 330px;
+    border-radius: 10px;
+    overflow: hidden;
     background-color: #FFFFFF;
-    width: 240.27px;
-    height: 230.52px;
-    padding: 10px 20px;
 }
 
-.little-box {
+
+.story-img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+.little-story-content {
+    padding: 30px;
+}
+
+.little-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.little-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -329,7 +377,81 @@ border-top-left-radius: 16px;
 .ft-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 123px 174px 128px 228px; 
 }
+
+.ft-logo-title {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.ft-description {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+
+
+.ft-logo {
+    align-items: center;
+}
+
+
+.about-school {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+
+.ab-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.ft-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.ft-link {
+    list-style: none;
+}
+
+
+.ft-anchor {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.touch {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive */
 @media screen and (max-width: 576px) {
